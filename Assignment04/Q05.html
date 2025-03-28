@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="assest/css/normalize.css">
+    <style>
+        body{
+            overflow: hidden;
+            margin: 0;
+        }
+
+        body>section{
+            width: 400vw;
+            height: 100vh;
+            display: flex;
+
+            animation-name: slide;
+            animation-duration: 30s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate-reverse;
+        }
+
+        body>section>div{
+            width: 100vw;
+            height: 100vh;
+        }
+
+        body>section>div>img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        @keyframes slide {
+            0%{
+                transform: translateX(0);
+                animation-delay: 3s;
+            }
+            16.66%{
+                transform: translateX(-100vw);
+                animation-delay: 3s;
+            }
+            33.33%{
+                transform: translateX(-200vw);
+                animation-delay: 3s;
+            }
+            50%{
+                transform: translateX(-300vw);
+                animation-delay: 3s;
+            }
+            66.66%{
+                transform: translateX(-200vw);
+                animation-delay: 3s;
+            }
+            83.33%{
+                transform: translateX(-100vw);
+                animation-delay: 3s;
+            }
+            100%{
+                transform: translateX(0);
+                animation-delay: 3s;
+            }
+        }
+    </style>
+</head>
+
+<style>
+</style>
+<body>
+<section>
+    <div>
+        <img src="image/slide1.jpeg" title="9 Arch Bridge" alt="Wallpaper">
+    </div>
+    <div>
+        <img src="image/slide2.jpeg" title="Elephant" alt="Wallpaper">
+    </div>
+    <div>
+        <img src="image/slide3.jpeg" title="Flower Garden" alt="Wallpaper">
+    </div>
+    <div>
+        <img src="image/slide4.jpeg" title="Lake" alt="Wallpaper">
+    </div>
+</section>
+</body>
+</html>

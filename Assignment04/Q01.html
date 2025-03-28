@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" href="assest/css/normalize.css">
+  <style>
+    section{
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      position:relative;
+
+    }
+    section>div{
+      width: 150px;
+      height:50px ;
+      background: purple;
+      margin-top: 20px;
+      margin-left:-120px ;
+      align-items: center;
+      transition-duration: 1s;
+      color: white;
+      display: flex;
+      padding: 10px;
+      justify-content: space-between;
+
+    }
+    div:hover{
+      margin-left: 0;
+    }
+    .section>div>i{
+      right: 0;
+      margin: auto;
+      position: absolute;
+    }
+
+  </style>
+</head>
+<body>
+<section class="section">
+  <div>MenuOne<i class="fa-solid fa-address-book"></i></div>
+  <div>MenuTwo<i class="fa-solid fa-truck-medical"></i></div>
+  <div>MenuThree<i class="fa-solid fa-book-atlas"></i></div>
+  <div>MenuFour<i class="fa-solid fa-layer-group"></i></div>
+  <div>MenuFive<i class="fa-solid fa-cart-plus"></i></div>
+</section>
+<script src="../../assets/lib/fontawesome/js/all.js"></script>
+<script src="../../assets/lib/fontawesome/css/all.css"></script>
+</body>
+</html>

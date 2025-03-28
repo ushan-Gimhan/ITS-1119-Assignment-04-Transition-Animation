@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assest/css/normalize.css">
+    <title>Animation Fix</title>
+
+    <style>
+        :root{
+            --session-width:100vw;
+            --session-height:100vh ;
+            --div-width:200px ;
+            --div-height:100px;
+        }
+        body{
+            overflow: hidden;
+        }
+        section {
+            width:var(--session-width);
+            height: var(--session-height);
+            border: 4px solid black;
+            position: absolute;
+        }
+
+        section > div {
+            position: relative;
+            width: 200px;
+            height: 100px;
+            border-radius: 20%;
+            background-color: brown;
+
+            animation-name: my-move;
+            animation-duration: 3s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+
+        @keyframes my-move {
+            0% {
+                margin: 0;
+                background-color: #007bff;
+            }
+
+            25% {
+                margin-left: calc(var(--session-width) - var(--div-width));
+                margin-top: 0;
+                transform: rotate(360deg);
+                background-color: yellow;
+            }
+
+            50% {
+                margin-left: calc(var(--session-width) - var(--div-width));
+                margin-top: calc(var(--session-height) - var(--div-width));
+                transform: rotate(0deg);
+                background-color: red;
+            }
+
+            75% {
+                margin-left: 0;
+                margin-top: calc(var(--session-height) - var(--div-width));
+                transform: rotate(360deg);
+                background-color: deeppink;
+            }
+            100%{
+                margin: 0;
+                transform: rotate(0deg);
+                background-color: orange;
+            }
+        }
+
+    </style>
+</head>
+<body>
+<section>
+    <div></div>
+</section>
+</body>
+</html>

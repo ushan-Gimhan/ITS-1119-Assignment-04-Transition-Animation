@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <link rel="stylesheet" href="assest/css/normalize.css">
+  <style>
+      body{
+          background-color: #007bff;
+      }
+      div{
+          width: 300px;
+          aspect-ratio: 1/1;
+          border-radius: 100%;
+          background-color: #a0aec0;
+          top: 0;
+          bottom: 0;
+          right: 0;
+          left: 0;b
+          margin: auto;
+          position: absolute;
+      }
+
+      .second{
+          border: 10px solid white;
+          border-top: 10px solid #ff253a;
+          position: absolute;
+          transition: transform 3s linear;
+      }
+
+      .second:hover{
+          animation: oneRotation 1s cubic-bezier(0.5,0.25, 0.25, 0.5);
+      }
+      .third{
+          width: 100px;
+          aspect-ratio: 1/1;
+          border-radius: 100%;
+          z-index: 99;
+      }
+      div>p{
+          height: fit-content;
+          width: fit-content;
+          font-weight: bold;
+          color: white;
+          font-size: 40px;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          margin: auto;
+          position: absolute;
+      }
+      @keyframes oneRotation{
+          from{
+              transform: rotate(0deg);
+          }to{
+            transform: rotate(360deg);}
+
+      }
+
+  </style>
+</head>
+<body>
+  <div class="second"></div>
+  <div class="third"><p>RWAD</p></div>
+</body><script>
+</script>
+</html>
